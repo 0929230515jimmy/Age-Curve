@@ -8,7 +8,7 @@ import numpy as np
 st.set_page_config(layout="wide", page_title="Baseball Stats Dashboard")
 
 batting_data = pd.read_csv("https://github.com/0929230515jimmy/Age-Curve/blob/main/batting_final.csv?raw=True")
-pitching_data = pd.read_csv("https://github.com/0929230515jimmy/Age-Curve/blob/main/pitching_final.csvraw=True")
+pitching_data = pd.read_csv("https://github.com/0929230515jimmy/Age-Curve/blob/main/pitching_final.csv?raw=True")
 
 if 'Oppo%' in batting_data.columns:
     batting_data['Oppo%'] = pd.to_numeric(batting_data['Oppo%'], errors='coerce')
